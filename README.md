@@ -12,7 +12,8 @@ This course delves into managing a linux server, automation techniques, best pra
 4. How to choose the right server?
 5. Hypervisors in linux servers
 6. Best Security practices
-7. Automation in server administration
+7. Proxy Servers
+8. Automation in server administration
 
 
 ## Lectures (Notes & Labs)
