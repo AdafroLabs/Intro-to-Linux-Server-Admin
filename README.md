@@ -57,9 +57,30 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 
 ### Automation & Monitoring for server administration
 
+-> Logrotate 
+
+    - This allows you to easily administer various log files  
+    - view man page
+
+-> `top` command 
+
+    - For cpu utilisation views on memory 
+
 
 
 ### Managing User accounts and Groups
+
+The common commands that one will use as they manage various users and groups on a server are below
+
+- Adding user
+
+    ```bash
+    $ useradd <user_name>
+    ```
+
+- Password change
+
+- Adding user to a group
 
 
 ### Server Network and Connectivity Configuration
