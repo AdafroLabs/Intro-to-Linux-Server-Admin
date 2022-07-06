@@ -66,7 +66,14 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 
     - For cpu utilisation views on memory 
 
+-> IaC(Infrastructure as Code)
 
+This is the process of provisioning and managing infrastructure through code. In this way, you can deploy , manage and configure resources such as Virtual machines with lines of code.
+
+    - tools
+        * [Ansible](https://www.ansible.com/)
+        * [Terraform](https://www.terraform.io/)
+        * 
 
 ### Managing User accounts and Groups
 
