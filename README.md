@@ -2,7 +2,7 @@
 
 ## Course description:
 
-This course delves into managing a linux server, automation techniques, best practices to ensure scalability, secure development and deployment of applications.
+This course delves into managing, automation techniques, best practices to ensure scalability, secure development and deployment of applications on a linux server.
 
 ---
 
