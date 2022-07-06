@@ -37,13 +37,16 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 
 ### Deep dive into linux servers
 
+- Creating a Linux Server
 - Physical volumes, Volume groups and Logical Volumes
     - [guide](https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Cluster_Logical_Volume_Manager/)
 
 - Daemon Processes
 - Installing softwares and packages
 - High Availability Clusters and resilient Storage
-- 
+- Upgrading Linux Server
+    
+    - Inplace upgrades
 
 ### How to choose the right server?
 
