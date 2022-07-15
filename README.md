@@ -4,6 +4,12 @@
 
 This course delves into managing, automation techniques, best practices to ensure scalability, secure development and deployment of applications on a linux server.
 
+#### Pre-requisites 
+
+This course assumes basic knowledge of working with linux and basic linux commands.
+
+You can check out the [Intro to Linux](https://github.com/AdafroLabs/Intro-to-Linux-2022) course by adafrolabs incase you are totally new to it.
+
 ---
 
 ## Objectives
@@ -37,7 +43,7 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 
 ### Deep dive into linux servers
 
-- Creating a Linux Server
+- Installing and Configuring a Linux Server
 - Physical volumes, Volume groups and Logical Volumes
     - [guide](https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Cluster_Logical_Volume_Manager/)
 
@@ -46,7 +52,7 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 - High Availability Clusters and resilient Storage
 - Upgrading Linux Server
     
-    - Inplace upgrades
+    -Inplace upgrades
 
 ### How to choose the right server?
 
@@ -55,10 +61,16 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 
 -> What is a KVM Switch?
 
-### Best Security practices
+Kernel-based Virtual Machine (KVM) is an open source virtualization technology built into Linux. [ref](https://www.redhat.com/en/topics/virtualization/what-is-KVM)
 
+Steps to set up a KVM [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-system_requirements-kvm_requirements)
+
+### Best Security practices
+    - [PAM Modules](https://www.redhat.com/sysadmin/pluggable-authentication-modules-pam)
+    - ACL Access Control Lists
 
 ### Automation & Monitoring for server administration
+    - Cron Jobs
 
 -> Logrotate 
 
