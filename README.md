@@ -69,7 +69,7 @@ A server sends, receives, and stores data. Fundamentally, it "serves" something 
 
 - High Availability Clusters and resilient Storage
 
-- *Upgrading Linux Server :*
+- *Upgrading Linux Servers :*
     Servers always need to be upgraded to the latest O.S version supported by the extended support license due to the constant security patches , robust features and design pattern changes the contributors make to them. In order to prevent your system server from being exploited by hackers , you will find yourself upgrading to newer supported OS versions. This can be done in a variety of ways as shown below
 
     - *Inplace upgrades :*
