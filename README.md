@@ -130,6 +130,9 @@ The common commands that one will use as they manage various users and groups on
     ```
 
 - *Adding user to a group*
+    ```bash
+    $ usermod –aG <group> <UserName>
+    ```
 
 - *GECOS :*
 This is a small description about the user that helps one identify them easily. In order to view a list of all users on a server, you need to be logged in as a sudoer and typt `cat /etc/passwd` The fields below will show
