@@ -8,7 +8,7 @@ This course delves into managing, automation techniques, best practices to ensur
 
 Basic working knowledge of linux and commands.
 
-You can check out the [Intro to Linux](https://github.com/AdafroLabs/Intro-to-Linux-2022) course by adafrolabs incase you are totally new to it.
+You can check out the [Intro to Linux](https://github.com/AdafroLabs/Intro-to-Linux-2022) course by AdafroLabs incase you are totally new to it.
 
 ---
 
