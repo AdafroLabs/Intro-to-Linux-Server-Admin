@@ -6,7 +6,7 @@ This course delves into managing, automation techniques, best practices to ensur
 
 #### Pre-requisites 
 
-This course assumes basic knowledge of working with linux and basic linux commands.
+Basic working knowledge of linux and commands.
 
 You can check out the [Intro to Linux](https://github.com/AdafroLabs/Intro-to-Linux-2022) course by adafrolabs incase you are totally new to it.
 
@@ -26,7 +26,7 @@ You can check out the [Intro to Linux](https://github.com/AdafroLabs/Intro-to-Li
 
 ---
 ### What is a server?
-A server stores, sends, and receives data. In essence, it "serves" something else and exists to provide services. 
+A server sends, receives, and stores data. Fundamentally, it "serves" something else and is there to offer services.
 
 ### Types of Servers
 
@@ -44,16 +44,39 @@ A server stores, sends, and receives data. In essence, it "serves" something els
 ### Deep dive into linux servers
 
 - Installing and Configuring a Linux Server
+    Steps:
+    1. Download the ISO image of the linux distro you wish to install
+    2. Mount the image onto the virtual machine if it is to set it up for one or insert the bootable flashdrive with the ISO image in the server hardware CPU unit or server unit.
+    Alternative: Do a PXE boot with the image you have attained which is on the shared network with the server box you want to setup.
+    3. Follow the steps stated to install the right logical volumes and groups , you may use  the defaults to start.You will need to specify a root password as a final step that you should keep very secret from unauthorised users
+    4. Viola!! you have successfully installed and configured your linux server for use.
+
 - Physical volumes, Volume groups and Logical Volumes
     - [guide](https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Cluster_Logical_Volume_Manager/)
 
-- Daemon Processes
-- Installing softwares and packages
-- High Availability Clusters and resilient Storage
-- Upgrading Linux Server
-    
-    -Inplace upgrades
+- *Daemon Processes / Services :*
+    As stated in the definition of servers, they mainly exist to provide services. We tend to often label these as daemon processes. There are a couple of processes / services that have been open sourced and can easily be installed with a simple update or get command. 
+    The most common services management software suite is [systemd](https://systemd.io/)
+    With this you will often be able to use the `systemctl` command to check the enable, start, stop, and check the status of services . For more o the commands to use, check out this [man page](https://www.man7.org/linux/man-pages/man1/systemctl.1.html) 
 
+    You may as well have custom made services that can easily be started and stopped using this software suite. It is important to ensure services are enabled such that on the reboot, they are able to start automatically.
+
+- *Installing softwares and packages :*
+    Different linux distributions have various ways in which one can install software and packages for example for the RHEL , fedora and centOS distros, the `yum` command and `dnf` command are often used for this purpose.
+
+    The Ubuntu distro uses the `apt` command. 
+    One thing to note is before you update or install any package, always ensure that the repositories collection command is always up to date. You can do this with a `yum update` or an `apt update` and `apt upgrade` command depending on the linux distro you are using.
+
+- High Availability Clusters and resilient Storage
+
+- *Upgrading Linux Server :*
+    Servers always need to be upgraded to the latest O.S version supported by the extended support license due to the constant security patches , robust features and design pattern changes the contributors make to them. In order to prevent your system server from being exploited by hackers , you will find yourself upgrading to newer supported OS versions. This can be done in a variety of ways as shown below
+
+    - *Inplace upgrades :*
+        You move from an older version of the operating system to a newer version, while staying on the same physical hardware. 
+    - *Migration :* 
+        You move from an older version of the operating system to a newer version of the operating system, by transferring to a different set of hardware or virtual machine.
+    - *Cluster OS Rolling Upgrade.* You upgrade the operating system of your cluster nodes without stopping the Hyper-V or the Scale-Out File Server workloads. 
 ### How to choose the right server?
 
 
@@ -111,6 +134,8 @@ The common commands that one will use as they manage various users and groups on
 
 ---
 ## Lectures (Notes & Labs)
+
+[Notes](https://github.com/AdafroLabs/Intro-to-Linux-Server-Admin/tree/main/Notes)
 
 ### Linux Server Admin
 
