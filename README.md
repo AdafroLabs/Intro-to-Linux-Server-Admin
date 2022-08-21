@@ -129,9 +129,9 @@ The common commands that one will use as they manage various users and groups on
     $ passwd <user_name>
     ```
 
-- Adding user to a group
+- *Adding user to a group*
 
-- GECOS
+- *GECOS :*
 This is a small description about the user that helps one identify them easily. In order to view a list of all users on a server, you need to be logged in as a sudoer and typt `cat /etc/passwd` The fields below will show
 
 ```
