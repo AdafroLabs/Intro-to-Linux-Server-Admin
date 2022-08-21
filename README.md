@@ -125,8 +125,36 @@ The common commands that one will use as they manage various users and groups on
 
 - Password change
 
+    ```bash
+    $ passwd <user_name>
+    ```
+
 - Adding user to a group
 
+- GECOS
+This is a small description about the user that helps one identify them easily. In order to view a list of all users on a server, you need to be logged in as a sudoer and typt `cat /etc/passwd` The fields below will show
+
+```
+amark:x:1001:1001:mark,,,:/home/mark:/bin/bash
+[--] - [--] [--] [-----] [--------] [--------]
+|    |   |    |     |         |        |
+|    |   |    |     |         |        +-> 7. Login shell
+|    |   |    |     |         +----------> 6. Home directory
+|    |   |    |     +--------------------> 5. GECOS
+|    |   |    +--------------------------> 4. GID
+|    |   +-------------------------------> 3. UID
+|    +-----------------------------------> 2. Password
++----------------------------------------> 1. Username
+```
+In order to edit the finger details of a user, you can use the command below which should change the GECOS description
+
+`chfn <user name> -f <user description>`
+
+P.S user description has to be in quotes and can be e.g Application Administrator Account
+
+You can use `finger username -l` to view the finger information
+
+if finger is not installed use yum install finger to add it for CentOS, fedora and RHEL servers
 
 ### Server Network and Connectivity Configuration
 
